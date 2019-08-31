@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_care"
+        android:title="care"
+        android:icon="@drawable/care"
+        />
+    <item
+        android:id="@+id/navigation_memories"
+        android:title="memories"
+        android:icon="@drawable/gallery"/>
+    <item
+        android:id="@+id/navigation_notif"
+        android:title="Notification"
+        android:icon="@drawable/bell"/>
+    <item
+        android:id="@+id/navigation_profile"
+        android:title="Profile"
+        android:icon="@drawable/profil_photo"/>
+</menu>
