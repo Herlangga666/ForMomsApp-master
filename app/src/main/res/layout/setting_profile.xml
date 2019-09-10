@@ -3,30 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Setting Profile"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:fontFamily="casual"
-        android:layout_marginTop="10dp"
-        android:textAppearance="?android:textAppearanceMedium"/>
+        android:id="@+id/bar"
+        android:background="@drawable/bg">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Setting Profile"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="123dp"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text"
-        android:layout_marginHorizontal="40dp">
+        android:layout_below="@id/bar"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp">
         <TextView
             android:id="@+id/txt_nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="nama :"/>
+            android:text="Nama :"
+            android:textColor="#449def"/>
 
         <androidx.cardview.widget.CardView
             android:layout_below="@id/txt_nama"
@@ -44,7 +54,8 @@
             android:layout_below="@id/nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tinggi :"/>
+            android:text="Tinggi :"
+            android:textColor="#449def" />
         <androidx.cardview.widget.CardView
             android:id="@+id/tinggi"
             android:layout_below="@id/txt_tinggi"
@@ -60,7 +71,8 @@
             android:layout_below="@id/tinggi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tinggi :"/>
+            android:text="Berat :"
+            android:textColor="#449def"/>
         <androidx.cardview.widget.CardView
             android:id="@+id/berat"
             android:layout_below="@id/txt_berat"
@@ -76,7 +88,8 @@
             android:layout_below="@id/berat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tinggi :"/>
+            android:text="Tanggal Lahir :"
+            android:textColor="#449def"/>
         <androidx.cardview.widget.CardView
             android:id="@+id/tanggal_lahir"
             android:layout_below="@id/txt_tanggal"
@@ -98,7 +111,11 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Simpan"/>
+                android:text="Simpan"
+                android:background="@drawable/button_setting"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
