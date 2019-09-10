@@ -10,8 +10,15 @@
     <FrameLayout
         android:id="@+id/care"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/bg">
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/settingcare"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/settings_logo" />
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
@@ -21,66 +28,53 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="casual"
                 android:text="Care"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
         </androidx.appcompat.widget.Toolbar>
 
-        <ImageView
-            android:id="@+id/settingcare"
-            android:layout_width="30dp"
-            android:layout_height="25dp"
-            android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="15dp"
-            android:src="@drawable/ic_settings_black_24dp" />
-
     </FrameLayout>
 
-    <FrameLayout
+    <RelativeLayout
         android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/care">
-
-        <androidx.appcompat.widget.Toolbar
+        android:layout_below="@+id/care"
+        android:gravity="center"
+        android:paddingHorizontal="10dp">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/searchbox"
-                android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_box"
+            android:paddingTop="7dp"
+            android:paddingHorizontal="15dp"
+            android:paddingBottom="10dp">
+            <EditText
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/search_box"></ImageView>
+                android:layout_weight="1"
+                android:hint="Cari Artikel"
+                android:layout_gravity="center_vertical"/>
 
-        </androidx.appcompat.widget.Toolbar>
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right|center_vertical"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/search" />
-
-        <EditText
-            android:layout_width="340dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:hint="Cari Artikel">
-
-        </EditText>
-
-    </FrameLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/search" />
+        </LinearLayout>
+    </RelativeLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/search"
-        android:layout_margin="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="2dp"
         android:background="@drawable/card_view">
 
         <RelativeLayout
@@ -119,7 +113,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/card1"
-        android:layout_margin="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="2dp"
         android:background="@drawable/card_view">
 
         <RelativeLayout
@@ -157,7 +152,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/card2"
-        android:layout_margin="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="2dp"
         android:background="@drawable/card_view">
 
         <RelativeLayout

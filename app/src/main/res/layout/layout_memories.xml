@@ -36,6 +36,7 @@
         android:layout_marginRight="15dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/bebi3" />
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -77,56 +78,62 @@
                 <ImageView
                     android:layout_height="100dp"
                     android:layout_width="100dp"
-                    android:src="@drawable/bebi7"
+                    android:src="@drawable/bebi1"
                     android:layout_margin="5dp"/>
                 <ImageView
                     android:layout_height="100dp"
                     android:layout_width="100dp"
-                    android:src="@drawable/abu"
+                    android:src="@drawable/bebi2"
                     android:layout_margin="5dp"/>
                 <ImageView
                     android:layout_height="100dp"
                     android:layout_width="100dp"
-                    android:src="@drawable/abu"
+                    android:src="@drawable/bebi4"
                     android:layout_margin="5dp"/>
                 <ImageView
                     android:layout_height="100dp"
                     android:layout_width="100dp"
-                    android:src="@drawable/abu"
+                    android:src="@drawable/bebi5"
                     android:layout_margin="5dp"/>
                 <ImageView
                     android:layout_height="100dp"
                     android:layout_width="100dp"
-                    android:src="@drawable/abu"
+                    android:src="@drawable/bebi6"
                     android:layout_margin="5dp"/>
                 <ImageView
                     android:layout_height="100dp"
                     android:layout_width="100dp"
-                    android:src="@drawable/abu"
+                    android:src="@drawable/bebi1"
                     android:layout_margin="5dp"/>
                 <ImageView
                     android:layout_height="100dp"
                     android:layout_width="100dp"
-                    android:src="@drawable/abu"
+                    android:src="@drawable/bebi2"
                     android:layout_margin="5dp"/>
                 <ImageView
                     android:layout_height="100dp"
                     android:layout_width="100dp"
-                    android:src="@drawable/abu"
+                    android:src="@drawable/bebi4"
                     android:layout_margin="5dp"/>
                 <ImageView
                     android:layout_height="100dp"
                     android:layout_width="100dp"
-                    android:src="@drawable/abu"
+                    android:src="@drawable/bebi5"
                     android:layout_margin="5dp"/>
                 <ImageView
                     android:layout_height="100dp"
                     android:layout_width="100dp"
-                    android:src="@drawable/abu"
+                    android:src="@drawable/bebi6"
                     android:layout_margin="5dp"/>
-
             </GridLayout>
         </ScrollView>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"/>
 </RelativeLayout>

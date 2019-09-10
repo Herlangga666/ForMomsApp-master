@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">ForMom\'s</string>
+    <string-array name="card_judul">
+        <item>Sampo</item>
+        <item>Bedak</item>
+        <item>Tisu</item>
+        <item>Lorem</item>
+    </string-array>
+    <array name="Isi_card">
+        <item>Ini Sampo Terbaik</item>
+        <item>Ini Bedak Terbaik</item>
+        <item>Ini Tisu Terbaik</item>
+        <item>Ini Contoh</item>
+    </array>
 </resources>
