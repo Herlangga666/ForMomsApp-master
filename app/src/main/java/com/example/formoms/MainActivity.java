@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.formoms.Care.HomeFragment;
+import com.example.formoms.Memories.MemoriesFragment;
+import com.example.formoms.Notification.notification;
+import com.example.formoms.Profile.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

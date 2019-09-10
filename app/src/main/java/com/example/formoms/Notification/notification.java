@@ -1,8 +1,7 @@
-package com.example.formoms;
+package com.example.formoms.Notification;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
@@ -11,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.example.formoms.Profile.ProfileFragment;
+import com.example.formoms.R;
 
 public class notification extends Fragment {
 
@@ -23,7 +25,7 @@ public class notification extends Fragment {
         btnSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(),ProfileFragment.class));
+                startActivity(new Intent(getActivity(), ProfileFragment.class));
             }
         });
         return v;

@@ -1,105 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="141dp"
-        android:layout_height="49dp"
-        android:src="@drawable/profilsetting"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatImageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.66" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/appCompatImageView44"
-        android:layout_width="190dp"
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:src="@drawable/simpan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.947" />
-
+        android:layout_centerHorizontal="true"
+        android:text="Setting Profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:textAppearanceMedium"/>
     <RelativeLayout
-        android:id="@+id/appCompatImageView4"
-        android:layout_width="350dp"
-        android:layout_height="82dp"
-        android:background="@drawable/tanggallahir"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatImageView44"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.573"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.931">
-
-        <EditText
-            android:layout_width="267dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginHorizontal="40dp">
+        <TextView
+            android:id="@+id/txt_nama"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true" />
+            android:text="nama :"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/txt_nama"
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nama"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/txt_tinggi"
+            android:layout_below="@id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinggi :"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tinggi"
+            android:layout_below="@id/txt_tinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Tinggi"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/txt_berat"
+            android:layout_below="@id/tinggi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinggi :"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/berat"
+            android:layout_below="@id/txt_berat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Berat"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/txt_tanggal"
+            android:layout_below="@id/berat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinggi :"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tanggal_lahir"
+            android:layout_below="@id/txt_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Tanggal Lahir"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="20dp"
+            android:id="@+id/simpan"
+            android:layout_below="@id/tanggal_lahir"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Simpan"/>
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/appCompatImageView"
-        android:layout_width="350dp"
-        android:layout_height="82dp"
-        android:background="@drawable/tinggi"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatImageView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.942">
 
-        <EditText
-            android:layout_width="267dp"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/appCompatImageView3"
-        android:layout_width="350dp"
-        android:layout_height="82dp"
-        android:background="@drawable/berat"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatImageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.956">
-
-        <EditText
-            android:layout_width="267dp"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/appCompatImageView2"
-        android:layout_width="350dp"
-        android:layout_height="82dp"
-        android:background="@drawable/nama"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatImageView3"
-        app:layout_constraintEnd_toEndOf="@+id/appCompatImageView3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/appCompatImageView3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.913">
-
-        <EditText
-            android:layout_width="267dp"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true" />
-
-    </RelativeLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
