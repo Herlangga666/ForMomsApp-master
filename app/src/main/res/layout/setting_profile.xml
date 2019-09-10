@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bar"
@@ -22,8 +22,9 @@
             android:layout_marginLeft="123dp"
             android:layout_marginBottom="10dp"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white" />
-    </LinearLayout>
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-thin"/>
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
