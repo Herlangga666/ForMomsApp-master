@@ -21,6 +21,7 @@
         <activity android:name=".Care.HomeFragment" />
         <activity android:name=".Notification.notification" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>
