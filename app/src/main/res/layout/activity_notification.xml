@@ -6,24 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".Notification.notification">
 
+
     <FrameLayout
         android:id="@+id/notificaton"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="62dp"
+        android:background="@drawable/bg">
 
         <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="393dp"
+            android:layout_height="30dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:fontFamily="sans-serif-thin"
                 android:text="Notification"
+                android:layout_marginTop="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/white"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:fontFamily="casual"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textStyle="bold" />
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -31,9 +35,9 @@
             android:id="@+id/settingnotif"
             android:layout_width="30dp"
             android:layout_height="25dp"
-            android:src="@drawable/settings_logo"
             android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="15dp"/>
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_settings_black_24dp" />
 
     </FrameLayout>
 
