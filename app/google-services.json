@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "369569294179",
+    "firebase_url": "https://formomsapp-master.firebaseio.com",
+    "project_id": "formomsapp-master",
+    "storage_bucket": "formomsapp-master.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369569294179:android:bcf55bea5b8d0aad6a5556",
+        "android_client_info": {
+          "package_name": "com.example.formoms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369569294179-2q6p9rus5kfdmhoajntmfosfjb0c3n34.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.formoms",
+            "certificate_hash": "05ca7e6dde6f80bb46718f4d2b30ffd74ef85e13"
+          }
+        },
+        {
+          "client_id": "369569294179-9lbqkhlsm3hvh6jn5k4pjs2d5th47h3p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1ThQm8kieMuss-vcTscYWKCJbScxAk7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369569294179-9lbqkhlsm3hvh6jn5k4pjs2d5th47h3p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
